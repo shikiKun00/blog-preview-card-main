@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+:root {
+    background-color: hsl(47, 88%, 63%);
+    font-style: sans-serif;
+}
+
+a,
+h1 {
+    font-weight: bold;
+}
+
+.button {
+    color: hsl(0, 0%, 7%);
+    background-color: hsl(47, 88%, 63%);
+    padding: 0.4rem 1.4rem;
+    border-radius: 30px;
+}
+
+.detail {
+    font-size: 1.6rem;
+    color: hsl(0, 0%, 7%);
+    transition: 0.5s;
+}
+
+.detail:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.container {
+    padding: 5em 2em;
+    display: grid;
+    align-content: center;
+    row-gap: 40px;
+}
+
+.card {
+    max-width: 90%;
+    border: 2px solid hsl(0, 0%, 7%);
+    background-color: white;
+    display: grid;
+    justify-items: start;
+    row-gap: 25px;
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    justify-self: center;
+    box-shadow: 10px 10px 0px hsl(0, 0%, 7%);
+}
+
+.card p:last-of-type {
+    color: hsl(0, 0%, 50%);
+}
+
+.card .profile {
+    display: grid;
+    align-items: center;
+    column-gap: 10px;
+    grid-template-columns: 0.3fr 1fr;
+}
+
+@media (min-width: 1440px) {
+    .card {
+        max-width: 30%;
+    }
+}
